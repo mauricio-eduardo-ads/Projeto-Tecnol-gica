@@ -1,85 +1,90 @@
-/*
-****** LIMPAR FORMATAÇÔES ******
-*/
-*{
+/* RESET */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-/*
-****** FORMATAÇÕES GENÉRICAS ******
-*/
-body{
+/* BODY */
+body {
     font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     background-color: #c4c4c4;
 }
 
-h1{
+/* TITLES */
+h1 {
     color: black;
     font-size: 40px;
 }
 
-h2{
+h2 {
     color: #06c;
+    margin-bottom: 15px;
 }
 
-h3{
+h3 {
     color: #565656;
     background: rgba(222, 209, 209, 0.836);
     padding: 5px;
+    margin-bottom: 10px;
 }
 
-/*
-****** HEADER ******
-*/
-#header{
+/* HEADER */
+#header {
     background-color: rgb(6, 6, 120);
     padding: 15px;
     text-align: center;
 }
 
-#Logo, #menu{
+#logo, #menu {
     padding: 10px;
 }
 
-#header a:Link, #header a:visited{
+#menu a {
     color: white;
     padding: 8px 12px;
+    display: inline-block;
 }
 
-#header a:hover{
+#menu a:hover {
     color: #06c;
     background-color: aliceblue;
-    text-decoration: none;
 }
 
-.white{
-    color:rgb(247, 247, 247);
+.white {
+    color: white;
 }
 
-/*
-****** CONTENT ******
-*/
-#content{
-    width: 920px;
+/* MAIN CONTENT */
+#content {
+    max-width: 920px;
     margin: 0 auto;
     padding: 15px;
+    overflow: hidden;
 }
 
-#posts{
+/* POSTS */
+#posts {
     width: 660px;
     float: left;
 }
 
-.post{
+#right-side{
+    width: 240px;
+    float: right;
+}
+
+.post {
     padding: 20px;
     margin-bottom: 20px;
     background: floralwhite;
     text-align: justify;
+    border-radius: 5px;
 }
 
-.data-post{
+.data-post {
     font-size: 13px;
     border-bottom: 1px solid blue;
     padding-bottom: 10px;
@@ -87,54 +92,48 @@ h3{
     display: block;
 }
 
-.img-post{
-    width: 620px;
+.img-post {
+    width: 100%;
+    max-width: 620px;
+    margin-bottom: 10px;
 }
 
-/*
-****** RIGHT SIDE ******
-*/
-#right-side{
+/* SIDEBAR */
+#right-side {
     width: 240px;
     float: right;
 }
 
-.content-right{
+.content-right {
     background: white;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-.post-right{
+.post-right {
     font-size: 13px;
     padding: 5px;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted #ccc;
 }
 
-/*
-****** FORMATAÇÃO LINKS ******
-*/
-*{
-    text-decoration: none;
-}
-
-a:link, a:visited{
+/* LINKS */
+a:link,
+a:visited {
     color: #06c;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-/*
-****** FOOTER ******
-*/
-#footer{
+/* FOOTER */
+#footer {
     clear: both;
     text-align: center;
     padding: 15px;
     background: white;
     color: #06c;
+    margin-top: 30px;
+    font-size: 14px;
 }
-
-
